@@ -23,14 +23,20 @@ public class Solution {
         // TODO: Traverse the list in the forward direction and print the elements
         System.out.print("Forward: ");
         while (iterator.hasNext()) {
-            System.out.print(iterator.next() + " ");
+            System.out.print(iterator.next());
+            if (iterator.hasNext()) {
+                System.out.print(" ");
+            }
         }
         System.out.println();
         
         // TODO: Traverse the list in the backward direction and print the elements
         System.out.print("Backward: ");
         while (iterator.hasPrevious()) {
-            System.out.print(iterator.previous() + " ");
+            System.out.print(iterator.previous());
+            if (iterator.hasPrevious()) {
+                System.out.print(" ");
+            }
         }
         
         scanner.close();
